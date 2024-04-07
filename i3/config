@@ -33,7 +33,8 @@ bindsym $mod+Return exec kitty
 bindsym F1 exec --no-startup-id flameshot gui
 bindsym $mod+p exec --no-startup-id pkill flameshot
 bindsym $mod+e exec --no-startup-id kitty ranger 
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym Mod1+Tab exec --no-startup-id rofi -show windowcd
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 
