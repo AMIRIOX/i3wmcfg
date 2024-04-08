@@ -34,9 +34,15 @@ bindsym F1 exec --no-startup-id flameshot gui
 bindsym $mod+p exec --no-startup-id pkill flameshot
 bindsym $mod+e exec --no-startup-id kitty ranger 
 bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym Mod1+Tab exec --no-startup-id rofi -show windowcd
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym Mod1+Tab exec --no-startup-id rofi -show windowcd 
+
+
+# for some reason that i can't explain, it doesn't work here, u can try it again. --amiriox
+# bindsym XF86MonBrightnessUp exec xbacklight -inc 5
+# bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec br +6000
+bindsym XF86MonBrightnessDown exec br -6000
+
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -55,7 +61,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id --autostart $HOME/.config/polybar/launch.sh
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
