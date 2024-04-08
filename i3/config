@@ -14,6 +14,7 @@ exec_always feh --bg-scale "file:///home/amiriox/picture/2024-03-26_19-56_3.png"
 exec --no-startup-id fcitx5
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom
+exec_always --no-startup-id copyq
 
 default_border pixel
 default_floating_border pixel
@@ -35,7 +36,7 @@ bindsym $mod+p exec --no-startup-id pkill flameshot
 bindsym $mod+e exec --no-startup-id kitty ranger 
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym Mod1+Tab exec --no-startup-id rofi -show windowcd 
-
+bindsym $mod+c exec --no-startup-id copyq toggle
 
 # for some reason that i can't explain, it doesn't work here, u can try it again. --amiriox
 # bindsym XF86MonBrightnessUp exec xbacklight -inc 5
@@ -218,3 +219,7 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
+for_window [class="netease-cloud-music"]    floating enable
+for_window [class="QQ"]    floating enable
+for_window [class="yakuake"]                floating enable
+for_window [class="copyq"] floating enbale
