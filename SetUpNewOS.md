@@ -7,7 +7,8 @@
 7. swap
 8. i3wm (i3config, polybar, rofi, kitty, picom)
 9. browser vimium(recommand!)
-
+11. Softwares (custom.)
+12(end). Snapshots. (Btrfs yes | use Snapper)
 
 sublime(theme,fastoj,wakatime,plaintask)
 fonts(//TODO), evolution
