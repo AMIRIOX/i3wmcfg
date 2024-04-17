@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-exec_always feh --bg-scale "file:///home/amiriox/picture/2024-03-26_19-56_3.png"
+exec_always feh --bg-scale "file:///home/amiriox/Pictures/2024-04-17_08-01.png"
 exec --no-startup-id fcitx5
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom
