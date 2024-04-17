@@ -14,14 +14,15 @@ exec_always feh --bg-scale "file:///home/amiriox/Pictures/2024-04-17_08-01.png"
 exec --no-startup-id fcitx5
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom
-exec_always --no-startup-id copyq
+
+# exec_always --no-startup-id copyq  用不着
 
 default_border pixel
 default_floating_border pixel
 hide_edge_borders none
 
-gaps inner 10
-gaps outer 6
+gaps inner 6
+gaps outer 0
 
 
 # exec --no-startup-id stalonetray
@@ -36,7 +37,7 @@ bindsym $mod+p exec --no-startup-id pkill flameshot
 bindsym $mod+e exec --no-startup-id kitty ranger 
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym Mod1+Tab exec --no-startup-id rofi -show windowcd 
-bindsym $mod+c exec --no-startup-id copyq toggle
+# bindsym $mod+c exec --no-startup-id copyq toggle
 
 # for some reason that i can't explain, it doesn't work here, u can try it again. --amiriox
 # bindsym XF86MonBrightnessUp exec xbacklight -inc 5
