@@ -5,8 +5,15 @@
 export ZSH="$HOME/.oh-my-zsh"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/amiriox/dev/sdl2/SDL2-2.0.14/_install/lib/
 alias docker="sudo docker"
+alias j="autojump"
 # alias trans="trans -e bing"
 export ALG="$HOME/practice/luogu.org/src"
+
+export JAVA_HOME=/usr/bin/java
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASS_PATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
+export CARGO_NET_GIT_FETCH_WITH_CLI=true
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
