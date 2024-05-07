@@ -5,7 +5,7 @@
 5. oh-my-zsh terminal(69x26) neovim
 6. sound configure
 7. swap
-8. i3wm (i3config, polybar, rofi, kitty, picom)
+8. i3wm (i3config, polybar, rofi, kitty, picom, ly(tui login))
 9. browser vimium(recommand!)
 11. Softwares (custom.)
 12(end). Snapshots. (Btrfs yes | use Snapper)
