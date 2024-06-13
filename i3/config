@@ -14,7 +14,7 @@ exec_always feh --bg-scale "file:///home/amiriox/Pictures/2024-04-17_08-01.png"
 exec --no-startup-id fcitx5
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom
-
+exec --no-startup-id xinput set-prop "DELL0957:00 06CB:CDD6 Touchpad" "libinput Tapping Enabled" 1
 # exec_always --no-startup-id copyq  用不着
 
 default_border pixel
